@@ -3,10 +3,10 @@ import Link from "next/link";
 import styles from "./layout.module.scss";
 import utilStyles from "../styles/utils.module.css";
 
-const name = "Your Name";
+const name = "Vladyslav Khrystych";
 export const siteTitle = "Vladyslav Khrystych - front-end and chips";
 
-export default function Layout({ children, home }) {
+export default ({ children, home }) => {
   return (
     <div className={styles.container}>
       <Head>
@@ -24,13 +24,14 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+
       <header className={styles.header}>
         {home ? (
           <>
             <img
+              alt={name}
               src="/images/avatar.jfif"
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
@@ -63,4 +64,4 @@ export default function Layout({ children, home }) {
       )}
     </div>
   );
-}
+};
