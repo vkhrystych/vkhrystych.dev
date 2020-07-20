@@ -40,12 +40,13 @@ export default ({ children, home }) => {
             <Link href="/">
               <a>
                 <img
+                  alt={name}
                   src="/images/profile.jpg"
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
                 />
               </a>
             </Link>
+
             <h2 className={utilStyles.headingLg}>
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>
@@ -54,7 +55,9 @@ export default ({ children, home }) => {
           </>
         )}
       </header>
+
       <main>{children}</main>
+
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
@@ -62,6 +65,20 @@ export default ({ children, home }) => {
           </Link>
         </div>
       )}
+
+      <footer className={styles.footer}>
+        <a href="#">
+          <img alt="telegram icon" src="/images/telegram.svg" />
+        </a>
+
+        <a href="#">
+          <img alt="twitter icon" src="/images/twitter.svg" />
+        </a>
+
+        <a href="#">
+          <img alt="facebook icon" src="/images/facebook.svg" />
+        </a>
+      </footer>
     </div>
   );
 };
