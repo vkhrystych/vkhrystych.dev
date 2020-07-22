@@ -43,8 +43,8 @@ export default function Home({ posts }) {
           <strong>2015-2016</strong>
           <br /> <a href="openrent.co.uk">openrent.co.uk</a> - webapp for
           longterm rental in London and signing documents directly on website.
-          My first collision with Flux architecture and working with the best
-          team.
+          My first collision with Flux architecture, managers from England and
+          daily meetings :)
         </p>
 
         <p>
