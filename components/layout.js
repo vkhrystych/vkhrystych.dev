@@ -67,15 +67,15 @@ export default ({ children, home }) => {
       )}
 
       <footer className={styles.footer}>
-        <a href="#">
+        <a href="https://t.me/gitstatus">
           <img alt="telegram icon" src="/images/telegram.svg" />
         </a>
 
-        <a href="#">
+        <a href="https://twitter.com/vladyslavkrhystych">
           <img alt="twitter icon" src="/images/twitter.svg" />
         </a>
 
-        <a href="#">
+        <a href="https://facebook.com/iwantvladique">
           <img alt="facebook icon" src="/images/facebook.svg" />
         </a>
       </footer>
