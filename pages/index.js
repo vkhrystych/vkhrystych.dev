@@ -17,7 +17,7 @@ export default function Home({ posts }) {
           on this page. So, let's start.
         </p>
 
-        <p>I creating user interfaces on React since 2015.</p>
+        <p>I have been creating user interfaces on React since 2015.</p>
 
         <p>
           At this time, I worked for small and large companies, and also was a
@@ -26,13 +26,13 @@ export default function Home({ posts }) {
         </p>
 
         <ul>
-          <li>I really love to create layouts</li>
+          <li>I really love creating layouts</li>
           <li>I solve problems, not playing programming</li>
-          <li>On my free time I like to play on my PS4 (yes, I'm geek)</li>
+          <li>In my free time I like to play on my PS4 (yes, I'm geek)</li>
         </ul>
 
         <p>
-          Of course you interested in my previous projects. Let me speak from my
+          Of course you are interested in my previous projects. Let me speak from my
           heart:
         </p>
 
