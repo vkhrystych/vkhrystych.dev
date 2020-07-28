@@ -71,7 +71,7 @@ export default ({ children, home }) => {
           <img alt="telegram icon" src="/images/telegram.svg" />
         </a>
 
-        <a href="https://twitter.com/vkrhystych">
+        <a href="https://twitter.com/vkhrystych">
           <img alt="twitter icon" src="/images/twitter.svg" />
         </a>
 
