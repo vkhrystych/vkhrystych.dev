@@ -1,13 +1,26 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
+import Link from "next/link";
 import utilStyles from "../styles/utils.module.css";
+import styles from "../components/layout.module.scss";
+import Layout, { siteTitle } from "../components/layout";
 
-export default function Home({ posts }) {
+import { getSortedPostsData } from "../lib/posts";
+
+export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
+
+      <header className={styles.header}>
+        <img
+          alt="Vladyslav Khrystych"
+          src="/images/avatar.jfif"
+          className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
+        />
+        <h1 className={utilStyles.heading2Xl}>Vladyslav Khrystych</h1>
+      </header>
 
       <section className={utilStyles.headingMd}>
         <p>
@@ -30,8 +43,8 @@ export default function Home({ posts }) {
         </ul>
 
         <p>
-          Of course you are interested in my previous projects. Let me speak from my
-          heart:
+          Of course you are interested in my previous projects. Let me speak
+          from my heart:
         </p>
 
         <p>
@@ -67,6 +80,18 @@ export default function Home({ posts }) {
         </p>
       </section>
 
+      <h2>Blog</h2>
+
+      <ul className={utilStyles.list}>
+        {allPostsData.map(({ id, title }) => (
+          <li className={utilStyles.listItem} key={id}>
+            <Link href="/blog/[id]" as={`/blog/${id}`}>
+              <a>{title}</a>
+            </Link>
+          </li>
+        ))}
+      </ul>
+
       <style jsx>{`
         ul {
           padding-left: 1.2rem;
@@ -74,4 +99,13 @@ export default function Home({ posts }) {
       `}</style>
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
 }
