@@ -1,8 +1,9 @@
 import Head from "next/head";
-import Link from "next/link";
 import utilStyles from "../styles/utils.module.css";
 import styles from "../components/layout.module.scss";
+import indexPageStyles from "../components/index-page.module.scss";
 import Layout, { siteTitle } from "../components/layout";
+import PostCard from "../components/PostCard";
 
 import { getSortedPostsData } from "../lib/posts";
 
@@ -82,15 +83,11 @@ export default function Home({ allPostsData }) {
 
       <h2>Blog</h2>
 
-      <ul className={utilStyles.list}>
+      <div className={indexPageStyles.blog}>
         {allPostsData.map(({ id, title }) => (
-          <li className={utilStyles.listItem} key={id}>
-            <Link href="/blog/[id]" as={`/blog/${id}`}>
-              <a>{title}</a>
-            </Link>
-          </li>
+          <PostCard title={title} href="/blog/[id]" as={`/blog/${id}`} />
         ))}
-      </ul>
+      </div>
 
       <style jsx>{`
         ul {
