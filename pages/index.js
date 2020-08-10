@@ -85,7 +85,12 @@ export default function Home({ allPostsData }) {
 
       <div className={indexPageStyles.blog}>
         {allPostsData.map(({ id, title }) => (
-          <PostCard title={title} href="/blog/[id]" as={`/blog/${id}`} />
+          <PostCard
+            key={id}
+            title={title}
+            href="/blog/[id]"
+            as={`/blog/${id}`}
+          />
         ))}
       </div>
 
