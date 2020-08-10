@@ -24,7 +24,7 @@ export default ({ children, home }) => {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
-      <main>{children}</main>
+      <main className="main">{children}</main>
 
       {!home && (
         <div className={styles.backToHome}>

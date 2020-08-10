@@ -84,12 +84,12 @@ export default function Home({ allPostsData }) {
       <h2>Blog</h2>
 
       <div className={indexPageStyles.blog}>
-        {allPostsData.map(({ id, title }) => (
+        {allPostsData.map((post) => (
           <PostCard
-            key={id}
-            title={title}
+            key={post.id}
+            post={post}
             href="/blog/[id]"
-            as={`/blog/${id}`}
+            as={`/blog/${post.id}`}
           />
         ))}
       </div>
