@@ -1,1 +1,1 @@
-My personal website and blod about development <3
+My personal website and blog about development 😎
