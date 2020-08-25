@@ -24,6 +24,11 @@ export default function Post({ postData }) {
         body {
           background: #efefef;
         }
+
+        code {
+          color: #fff;
+          background: darkblue;
+        }
       `}</style>
     </Layout>
   );
