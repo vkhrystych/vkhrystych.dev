@@ -23,13 +23,9 @@ Of course, you need to install Node on your computer and has accounts in [Fireba
 
 ## Let's do this, captain
 
-First of all we need to create new bot with [@botfather](https://t.me/botfather) in Telegram. It's very easy - just start your conversation with [@botfather](https://t.me/botfather), than type `/newbot` command and send the name of your new bot. After that you'll receive message with the token.
+### Init app
 
-Later we return to this.
-
-![botfather image](/images/posts/gmbot/botfather.jpg "Logo Title Text 1")
-
-Then we need to initialize our project. Type in your console:
+First of all we need to initialize our project. Type in your console:
 
 ```
 mkdir gmbot
@@ -51,3 +47,23 @@ What we installed:
 4. nodemon - thing for comfortable development: restarts our node server if we change the file.
 5. node-cron - run function in time intervals (each seconds, each day, etc.)
 6. node-fetch - [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) for NodeJS.
+
+### Get tokens
+
+Create file with ".env" name in root of the project folder. It will be our stakeholder for the tokens.
+
+Then we need to do some steps for getting tokens.
+After every step you can write token to our .env file in this format (you need to replace \*\*\* by your tokens):
+
+![dotenv tokens](/images/posts/gmbot/tokens.svg)
+
+1. [Create bot in Telegram](https://core.telegram.org/bots#3-how-do-i-create-a-bot)
+2. [Create free account in Firebase](https://firebase.google.com/)
+3. [Signup on openweather or other weather provider](http://openweathermap.org/)
+4. Signup on some news feed with open API
+
+How to create application on Firebase:
+
+[![firebase gif](/images/posts/gmbot/firebase-config.gif)](/images/posts/gmbot/firebase-config.gif)
+
+Click on picture to see the source GIF :)
