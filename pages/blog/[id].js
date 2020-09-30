@@ -29,6 +29,17 @@ export default function Post({ postData }) {
           color: #fff;
           background: darkblue;
         }
+
+        blockquote {
+          color: gray;
+          margin-left: 0;
+          margin-top: 2em;
+          font-size: 1.1em;
+          padding-left: 30px;
+          font-style: italic;
+          margin-bottom: 2em;
+          border-left: 3px solid black;
+        }
       `}</style>
     </Layout>
   );
