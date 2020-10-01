@@ -70,10 +70,6 @@ export default () => {
       </section>
 
       <style jsx global>{`
-        body {
-          background: #efefef;
-        }
-
         ul {
           padding-left: 1.2rem;
         }

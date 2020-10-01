@@ -33,10 +33,6 @@ export default function Post({ postData }) {
       </article>
 
       <style jsx global>{`
-        body {
-          background: #efefef;
-        }
-
         code {
           color: #fff;
           background: darkblue;

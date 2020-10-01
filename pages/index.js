@@ -11,7 +11,7 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>Владислав Христич - айти и житие</title>
       </Head>
 
       <div className={styles.header}>
