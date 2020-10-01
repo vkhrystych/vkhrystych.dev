@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import utilStyles from "../../styles/utils.module.css";
+import utilStyles from "../../styles/utils.module.scss";
 import styles from "../../components/layout.module.scss";
 
 import Layout from "../../components/layout";

@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout from "../../components/layout";
 import Date from "../../components/date";
-import utilStyles from "../../styles/utils.module.css";
+import utilStyles from "../../styles/utils.module.scss";
 
 import { getAllPostIds, getPostData } from "../../lib/posts";
 
@@ -18,6 +18,18 @@ export default function Post({ postData }) {
           <Date dateString={postData.date} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+
+        <div className={utilStyles.tags}>
+          <h4>Теги</h4>
+
+          <ul>
+            {postData.tags
+              ? postData.tags.map((tag, tagIndex) => (
+                  <li key={tagIndex}>#{tag}</li>
+                ))
+              : null}
+          </ul>
+        </div>
       </article>
 
       <style jsx global>{`
