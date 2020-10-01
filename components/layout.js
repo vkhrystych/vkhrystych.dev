@@ -7,46 +7,60 @@ export const siteTitle = "Vladyslav Khrystych - front-end and chips";
 
 export default ({ children, home }) => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-        <meta
-          property="og:image"
-          content={`https://og-image.now.sh/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-        />
-        <meta name="og:title" content={siteTitle} />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
+    <div className={styles.app}>
+      <header>
+        <ul className={styles.links}>
+          <li>
+            <Link href="/">Главная</Link>
+          </li>
 
-      <main className="main">{children}</main>
+          <li>
+            <Link href="/about">Обо мне</Link>
+          </li>
+        </ul>
+      </header>
 
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
+      <div className={styles.container}>
+        <Head>
+          <link rel="icon" href="/favicon.ico" />
+          <meta
+            name="description"
+            content="Learn how to build a personal website using Next.js"
+          />
+          <meta
+            property="og:image"
+            content={`https://og-image.now.sh/${encodeURI(
+              siteTitle
+            )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+          />
+          <meta name="og:title" content={siteTitle} />
+          <meta name="twitter:card" content="summary_large_image" />
+        </Head>
 
-      <footer className={styles.footer}>
-        <a href="https://t.me/gitstatus">
-          <img alt="telegram icon" src="/images/telegram.svg" />
-        </a>
+        <main className="main">{children}</main>
 
-        <a href="https://twitter.com/vkhrystych">
-          <img alt="twitter icon" src="/images/twitter.svg" />
-        </a>
+        {!home && (
+          <div className={styles.backToHome}>
+            <Link href="/">
+              <a>← Назад</a>
+            </Link>
+          </div>
+        )}
 
-        <a href="https://facebook.com/iwantvladique">
-          <img alt="facebook icon" src="/images/facebook.svg" />
-        </a>
-      </footer>
+        <footer className={styles.footer}>
+          <a href="https://t.me/gitstatus">
+            <img alt="telegram icon" src="/images/telegram.svg" />
+          </a>
+
+          <a href="https://twitter.com/vkhrystych">
+            <img alt="twitter icon" src="/images/twitter.svg" />
+          </a>
+
+          <a href="https://facebook.com/iwantvladique">
+            <img alt="facebook icon" src="/images/facebook.svg" />
+          </a>
+        </footer>
+      </div>
     </div>
   );
 };

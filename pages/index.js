@@ -14,9 +14,9 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
 
-      <header className={styles.header}>
+      <div className={styles.header}>
         <h1 className={utilStyles.heading2Xl}>Блог</h1>
-      </header>
+      </div>
 
       <section className={utilStyles.headingMd}>
         <p>
