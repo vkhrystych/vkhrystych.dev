@@ -2,15 +2,15 @@
   padding: 50px;
   flex: 1 1 50%;
   display: flex;
-  transition: 0.3s;
+  transition: 0.1s;
   background: #fff;
   align-items: center;
   flex-direction: column;
-  box-shadow: 3px 3px 18px -11px rgba(0, 0, 0, 0.75);
 
   &:hover {
-    transform: translateY(3px);
-    background: #fef7ff;
+    transform: translateY(-3px);
+    // background-color: #f4f4f0;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
   }
 }
 

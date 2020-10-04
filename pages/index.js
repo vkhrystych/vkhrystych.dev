@@ -2,7 +2,7 @@ import Head from "next/head";
 import utilStyles from "../styles/utils.module.scss";
 import styles from "../components/layout.module.scss";
 import indexPageStyles from "../components/index-page.module.scss";
-import Layout, { siteTitle } from "../components/layout";
+import Layout from "../components/layout";
 import PostCard from "../components/PostCard";
 
 import { getSortedPostsData } from "../lib/posts";
@@ -28,7 +28,7 @@ export default function Home({ allPostsData }) {
 
       <h2>Посты</h2>
 
-      <div className={indexPageStyles.blog}>
+      <div className={indexPageStyles.posts}>
         {allPostsData.map((post) => (
           <PostCard
             key={post.id}
