@@ -48,6 +48,11 @@ export default function Post({ postData }) {
           margin-bottom: 2em;
           border-left: 3px solid black;
         }
+
+        iframe {
+          width: 100%;
+          height: 400px;
+        }
       `}</style>
     </Layout>
   );
