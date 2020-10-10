@@ -19,7 +19,7 @@ export default function Home({ allPostsData }) {
       </div>
 
       <section className={utilStyles.headingMd}>
-        <p>
+        <p className={utilStyles.blogDescription}>
           Это уютный бложек Владислава Христича. У блога нет конкретной
           тематики, я рассказываю обо всём, чем хотел бы поделиться: от работы
           до игровых консолей.

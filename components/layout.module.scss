@@ -33,6 +33,10 @@
   padding: 0 1rem;
   max-width: 900px;
   margin: 3em auto 5em auto;
+
+  @media (max-width: 600px) {
+    margin: 0em auto 5em auto;
+  }
 }
 
 .header {

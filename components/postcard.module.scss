@@ -11,13 +11,25 @@
     transform: translateY(-3px);
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
   }
+
+  @media (max-width: 600px) {
+    padding: 20px;
+  }
 }
 
 .emoji {
   font-size: 5rem;
+
+  @media (max-width: 600px) {
+    font-size: 3rem;
+  }
 }
 
 .card h3 {
   color: black;
   font-size: 1.8rem;
+
+  @media (max-width: 600px) {
+    font-size: 1.4rem;
+  }
 }
