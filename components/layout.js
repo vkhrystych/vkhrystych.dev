@@ -2,8 +2,8 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "./layout.module.scss";
 
-const name = "Vladyslav Khrystych";
-export const siteTitle = "Vladyslav Khrystych - front-end and chips";
+const name = "Христич Дэйли";
+export const siteTitle = "Христич Дэйли | Жизнь, работа и технологии";
 
 export default ({ children, home }) => {
   return (
@@ -25,13 +25,11 @@ export default ({ children, home }) => {
           <link rel="icon" href="/favicon.ico" />
           <meta
             name="description"
-            content="Learn how to build a personal website using Next.js"
+            content="Блог про жизнь, работу и технологии"
           />
           <meta
             property="og:image"
-            content={`https://og-image.now.sh/${encodeURI(
-              siteTitle
-            )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+            content="/images/site-preview.jpg"
           />
           <meta name="og:title" content={siteTitle} />
           <meta name="twitter:card" content="summary_large_image" />

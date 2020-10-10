@@ -11,7 +11,7 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
-        <title>Владислав Христич - айти и житие</title>
+        <title>Христич Дэйли | Жизнь, работа и технологии</title>
       </Head>
 
       <div className={styles.header}>
@@ -20,8 +20,11 @@ export default function Home({ allPostsData }) {
 
       <section className={utilStyles.headingMd}>
         <p className={utilStyles.blogDescription}>
-          Это уютный бложек Владислава Христича. У блога нет конкретной
-          тематики, я рассказываю обо всём, чем хотел бы поделиться: от работы
+          Привет, я - Владислав Христич. Я айтишник, предприниматель и блогер.
+        </p>
+
+        <p className={utilStyles.blogDescription}>
+          У этого блога нет конкретной тематики, я рассказываю обо всём, чем хотел бы поделиться: от работы
           до игровых консолей.
         </p>
       </section>
