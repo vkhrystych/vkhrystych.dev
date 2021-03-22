@@ -46,7 +46,7 @@ export default ({ children, home }) => {
         )}
 
         <footer className={styles.footer}>
-          <a href="https://t.me/gitstatus">
+          <a href="https://t.me/vkhrystych">
             <img alt="telegram icon" src="/images/telegram.svg" />
           </a>
 
