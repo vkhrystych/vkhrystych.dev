@@ -14,7 +14,7 @@ export default function Post({ postData }) {
 
       <article className={utilStyles.post}>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        
+
         <div className={utilStyles.lightText}>
           <Date dateString={postData.date} />
         </div>
@@ -54,6 +54,28 @@ export default function Post({ postData }) {
         iframe {
           width: 100%;
           height: 400px;
+        }
+
+        table {
+          margin: 50px 0;
+        }
+
+        thead {
+          color: #495057;
+          background-color: #e9ecef;
+          border-color: #dee2e6;
+          border-bottom: 2px solid #dee2e6;
+        }
+
+        thead th {
+          padding: 10px;
+        }
+
+        tbody td {
+          padding: 0.75rem;
+          vertical-align: middle;
+          border-top: 1px solid #dee2e6;
+          background-color: rgba(0, 0, 0, 0.02);
         }
       `}</style>
     </Layout>
