@@ -34,6 +34,7 @@ export default ({ children, home }) => {
             name="google-site-verification"
             content="ibvOzf8z_Guu0WjHL1nr5N8SBP8clV_P3tqKe-NMuc0"
           />
+          <meta name="yandex-verification" content="689ccd8dbddbd0a0" />
         </Head>
 
         <main className="main">{children}</main>
