@@ -27,12 +27,13 @@ export default ({ children, home }) => {
             name="description"
             content="Блог про жизнь, работу и технологии"
           />
-          <meta
-            property="og:image"
-            content="/images/site-preview.jpg"
-          />
+          <meta property="og:image" content="/images/site-preview.jpg" />
           <meta name="og:title" content={siteTitle} />
           <meta name="twitter:card" content="summary_large_image" />
+          <meta
+            name="google-site-verification"
+            content="ibvOzf8z_Guu0WjHL1nr5N8SBP8clV_P3tqKe-NMuc0"
+          />
         </Head>
 
         <main className="main">{children}</main>
